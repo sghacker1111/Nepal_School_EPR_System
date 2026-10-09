@@ -1,0 +1,29 @@
+# dependencies
+/node_modules
+
+# Next.js
+/.next
+/out
+
+# generated
+/src/generated/prisma
+/coverage
+/.local
+/.local-pglite
+
+# local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# logs and operating-system files
+*.log
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Vercel
+.vercel

@@ -1,0 +1,2 @@
+import{createStudentTemplate}from"@/modules/students/import";import{requireSchoolContext}from"@/modules/auth/session";
+export async function GET(){await requireSchoolContext("student.import");const file=await createStudentTemplate();return new Response(file,{headers:{"Content-Type":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","Content-Disposition":"attachment; filename=student-import-template.xlsx","Cache-Control":"private, no-store"}})}
